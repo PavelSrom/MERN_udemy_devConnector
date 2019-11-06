@@ -1,0 +1,12 @@
+***** MERN STACK *****
+
+- 'start' NPM script is the one Heroku runs when deployed
+- db.js => function that we export into server.js than runs our database
+
+SERVER-SIDE VALIDATION:
+- Brad uses express-validator for validation
+- do validation before you interact with your DB
+- view users API routes and see 'Request & body validation' lecture for more info
+
+ROUTES:
+- users route: ignore the gratavar stuff, that's just for a profile image

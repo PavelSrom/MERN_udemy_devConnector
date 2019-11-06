@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://mernPavel:mernPavel@mern-app-zlva3.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "MERN_PAVEL_TOKEN"
+}
