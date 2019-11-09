@@ -39,7 +39,7 @@ router.post('/', [
     // return JWT
     const JWTpayload = {
       user: {
-        id: user.id
+        id: user.id // I don't have to do '_id', mongoose does it automatically
       }
     }
     // sign the token and return it as a response

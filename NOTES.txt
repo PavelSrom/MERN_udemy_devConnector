@@ -10,3 +10,4 @@ SERVER-SIDE VALIDATION:
 
 ROUTES:
 - users route: ignore the gratavar stuff, that's just for a profile image
+- learn how to use .populate() properly
