@@ -1,6 +1,4 @@
 {
   "mongoURI": "mongodb+srv://mernPavel:mernPavel@mern-app-zlva3.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "MERN_PAVEL_TOKEN",
-  "githubClientId": "3b2896cde0d045dbb302",
-  "githubClientSecret": "e0867f38f39a53052bde82c2437a0222873a8bc3"
+  "jwtSecret": "MERN_PAVEL_TOKEN"
 }

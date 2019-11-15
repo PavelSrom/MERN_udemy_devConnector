@@ -11,3 +11,57 @@ SERVER-SIDE VALIDATION:
 ROUTES:
 - users route: ignore the gratavar stuff, that's just for a profile image
 - learn how to use .populate() properly
+
+HOW TO DELETE CLIENT GIT CONFIG:
+- delete .gitignore and readme.md
+- delete .git folder
+
+CLIENT FOLDER CONFIG:
+- add 'proxy' to package.json set to localhost
+
+REGISTERING THE USER:
+- watch how Brad uses the useState hook
+- onSubmit handler on form, e.preventDefault()
+
+
+
+ALERT SYSTEM IN REDUX:
+- alert reducer for firing off alerts (Bootstrap alerts etc.)
+- e.g. when passwords don't match etc.
+- then you display these alerts in your UI by creating Alert component
+- see how alerts are done (in reducers, actions, component, App.js)
+
+REACT USER AUTHENTICATION:
+- revise the entire authentication chapter in the course!
+- auth reducer
+- login/register success and fail action types
+
+REACT ROUTING:
+- watch how to do private routes (HOC)
+- use private routes for routes that should be accessed only when logged in
+
+
+
+DEPLOYMENT:
+- use heroku CLI and Git
+- in 'config' folder, add 'production.json' and copy everything from default.json into it
+- let default.json be ignored in .gitignore
+- create build script in server package.json: "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+- serve React front-end as static assets in server.js:
+  - you must do this UNDERNEATH your API routes !!!
+  - inside server.js:
+
+// serve static assets in production
+if (process.env.NODE_ENV === "production") {
+  // set static folder
+  app.use(express.static("client/build"))
+  // serve this on our homepage
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"))
+  )
+}
+
+FINAL DEPLOYMENT:
+- 'heroku create' inside our root folder
+- 'git init' if you haven't done so already
+- 'git add .' => 'git commit -m "deployment commit"'

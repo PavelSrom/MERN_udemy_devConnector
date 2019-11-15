@@ -10,7 +10,7 @@ const postSchema = new mongoose.Schema({
     required: true
   },
   name: {
-    type: String,
+    type: String
   },
   avatar: {
     type: String
@@ -34,7 +34,7 @@ const postSchema = new mongoose.Schema({
         required: true
       },
       name: {
-        type: String,
+        type: String
       },
       avatar: {
         type: String
