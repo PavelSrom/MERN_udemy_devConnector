@@ -65,3 +65,9 @@ FINAL DEPLOYMENT:
 - 'heroku create' inside our root folder
 - 'git init' if you haven't done so already
 - 'git add .' => 'git commit -m "deployment commit"'
+
+- Add Heroku as a remote repository:
+  - go to the project name => 'deploy' tab => $ heroku git:remote -a shielded-taiga-15393 (something like that)
+  - copy that into terminal and run
+  - 'git push heroku master'
+  - optional: 'heroku open' once everything is done => opens the app in your browser
